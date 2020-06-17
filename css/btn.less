@@ -1,0 +1,66 @@
+// main: style.less
+
+.btn {
+    display: inline-block;
+    background: @orange;
+    color: @white;
+    text-transform: uppercase;
+    font-size: 1.35rem;
+    padding: 1.445em 3.951em;
+    min-height: 55px;
+
+    &:hover {
+        background: #ff6941;
+    }
+
+    &--plan {
+        min-height: 0;
+        padding: 0.43em 1.9em;
+        font-size: 14px;
+        line-height: 27px;
+        font-weight: 800;
+        letter-spacing: 0.05em;
+        background: #52cbf8;
+
+
+        &:hover {
+            background: #00baff;
+        }
+
+
+        @media @tabletH {
+            line-height: 1.2;
+            font-size: 10px;
+        }
+
+        @media @mobileS {
+            margin-bottom: 2rem;
+        }
+    }
+
+
+    @media @tabletH {
+        min-height: 0;
+        padding: 1.445em 2em;
+    }
+
+    &--sm {
+        min-height: 0;
+        padding: 1em 2.31em;
+    }
+
+
+    &--w100 {
+
+        @media @mobile {
+            width: 80%;
+            text-align: center;
+            margin: 2rem auto 0;
+        }
+
+        @media @mobileS {
+            width: 100%;
+        }
+    }
+
+}

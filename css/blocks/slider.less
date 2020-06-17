@@ -1,0 +1,78 @@
+// main: ../style.less
+
+.intro {
+    background: @darkBlue;
+    min-height: 570px;
+
+    @media @tabletW {
+        min-height: 510px;
+    }
+
+    @media @mobile {
+        min-height: 400px;
+    }
+}
+
+.slider {
+    margin: 5rem 0;
+}
+// блок с точками
+.slider__dots {
+    display: flex;
+    width: 100px;
+    margin: 3rem auto;
+    justify-content: center;
+}
+// отдельная точка
+.slider__dot {
+    width: 14px;
+    height: 14px;
+    border: 2.0px solid #ff8261;
+    border-radius: 50%;
+    margin-right: 1.2rem;
+
+    &.active {
+        border: 2.0px solid #5278db;
+    }
+}
+
+.slider__item {
+    margin-top: 3rem;
+    width: 500px;
+    margin: 0 auto;
+    text-align: -webkit-center;
+
+    text-transform: uppercase;
+    color: @white;
+
+    @media @mobile {
+        width: 300px;
+    }
+}
+
+.slider__title {
+    margin-top: 2rem;
+    font-size: 4rem;
+    font-weight: 800;
+    letter-spacing: 0.025em;
+
+    @media @tabletW {
+        font-size: 2rem;
+    }
+}
+
+.slider__img {
+    @media @mobile {
+        width: 80%;
+    }
+}
+
+.slider__suptitle {
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 0.095em;
+
+    @media @tabletW {
+        font-size: 1.6rem;
+    }
+}

@@ -1,0 +1,82 @@
+// main: ../style.less
+
+.benefits__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 5rem;
+    margin: 4rem -15px 0;
+}
+
+.benefits__item {
+    width: 30%;
+    margin: 0 15px 30px;
+    display: flex;
+
+    & i {
+        font-size: 6rem;
+        color: @orange;
+        margin: 0 1.7rem 0 0;
+
+        @media @tabletH {
+            font-size: 5rem;
+        }
+
+        @media @mobileS {
+            font-size: 4.5rem;
+        }
+    }
+
+    @media @tabletW {
+        width: 45%;
+    }
+
+    @media @tabletH {
+        width: 41%;
+    }
+
+    @media @mobile {
+        width: 80%;
+        margin: 0 15px 15px;
+    }
+
+    @media @mobileS {
+        width: 80%;
+        margin: 0 15px 15px;
+    }
+}
+
+.benefits__content {
+    padding: 1rem;
+
+    @media @mobileS {
+        padding: 1rem 2rem 1rem 1rem;
+    }
+}
+
+.benefits__title {
+    font-size: 1.6rem;
+    line-height: 31px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    color: #556b72;
+}
+
+.benefits__text {
+    font-size: 1.35rem;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    color: #a0a9b6;
+
+    @media @tabletH {
+        line-height: 20px;
+    }
+
+    @media @mobileS {
+        line-height: 16px;
+    }
+}
+
+
+

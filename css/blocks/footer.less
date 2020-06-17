@@ -1,0 +1,142 @@
+// main: ../style.less
+
+.footer {
+    background: @footerColor;
+    padding: 5rem;
+    margin-top: auto;
+
+    & a:hover {
+        text-decoration: underline;
+    }
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+
+    @media @tabletW {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    @media @mobile {
+        justify-content: center;
+    }
+}
+
+.footer__col {
+
+    @media @tabletW {
+       width: 40%;
+        margin-bottom: 15px;
+    }
+
+    @media @mobile {
+        width: 100%;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+}
+
+.footer__col__title {
+    font-size: 1.4rem;
+    line-height: 27px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: @white;
+    margin-bottom: 2.7rem;
+
+    @media @mobile {
+        margin-bottom: 1rem;
+    }
+}
+
+.copy {
+    float: right;
+    font-size: 1.4rem;
+    line-height: 30px;
+    color: @footerLinks;
+
+    @media @tabletW {
+        float: left;
+    }
+
+    @media @mobile {
+        float: inherit;
+    }
+}
+
+.contacts {
+    width: 100%;
+    max-width: 300px;
+
+    @media @mobile {
+        margin: 0 auto;
+        width: 190px;
+    }
+}
+
+.contact__links {
+    display: flex;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: @footerLinks;
+
+    & p,span {
+        color: @white;
+    }
+
+    & span {
+        margin: 0 .2rem;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+.links__row {
+    display: flex;
+
+    @media @mobile {
+        justify-content: center;
+    }
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+
+    &--left {
+        margin-right: 6.5rem;
+    }
+}
+
+.footer__links {
+    color: @footerLinks;
+    font-size: 1.4rem;
+    margin-bottom: 1.2rem;
+}
+
+.social__footer {
+    font-size: 2.4rem;
+    color: @footerLinks;
+
+    & i {
+        transition: color .1s linear, transform .2s linear;
+    }
+
+    & a {
+        margin-right: 2rem;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:hover i{
+            transform: scale(1.1);
+            color: @orange;
+        }
+    }
+}

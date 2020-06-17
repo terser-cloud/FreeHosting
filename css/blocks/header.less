@@ -1,0 +1,212 @@
+// main: ../style.less
+
+
+.header__inner {
+    padding: 4.2rem 0 0;
+
+    @media @mobile{
+        padding: 2rem 0 0;
+    }
+
+}
+
+.header__top {
+    display: flex;
+    justify-content: space-between;
+
+    @media @mobile {
+        flex-direction: column;
+    }
+}
+
+.header__top__logo {
+    display: flex;
+    align-items: center;
+
+    &--footer {
+        @media @mobile {
+            justify-content: center;
+        }
+    }
+
+}
+
+.logo {
+    margin-right: 1rem;
+
+    @media @tabletW {
+        height: 24px;
+    }
+}
+
+.title {
+    font-size: 2rem;
+    line-height: 44px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: -0.005em;
+
+    &--footer {
+        color: #e7f4f8;
+    }
+
+    @media @tabletW {
+        font-size: 1.6rem;
+    }
+}
+
+.header__top {
+    padding-bottom: 4.2rem;
+
+    @media @mobile {
+        padding-bottom: 3rem;
+    }
+}
+
+.header__top__item {
+    width: 100%;
+    max-width: 455px;
+    font-size: 1.4rem;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    border-top: 1px solid #e1e9f2;
+    border-bottom: 1px solid #e1e9f2;
+
+    & a:hover {
+        text-decoration: underline;
+    }
+
+    @media @tabletW {
+        max-width: 385px;
+        font-size: 1.3rem;
+    }
+
+    @media @mobile {
+        max-width: 345px;
+        padding: 1rem 0;
+        margin: 10px auto 0;
+    }
+
+    @media @mobileS {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.header__support {
+
+    display: flex;
+
+    & span {
+        margin-right: .5rem;
+        letter-spacing: 0.01em;
+        color: #484e57;
+    }
+    & .header__top__link {
+        padding-left: 0;
+    }
+
+    @media @mobileS {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+}
+
+.header__top__link {
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    color: @headerLinks;
+
+    padding: 0 1.7rem;
+
+    &--border {
+        border-right: 1px solid #dde2e8;
+        border-left: 1px solid #dde2e8;
+
+        @media @mobileS {
+            border-left: 0;
+        }
+    }
+
+}
+
+.header__nav {
+    background-color: @orange;
+    width: 100%;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    @media @tabletW {
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: #fff;
+        font-size: 1rem;
+    }
+
+    @media @mobile {
+        display: none;
+    }
+}
+
+.burger {
+    background-color: transparent;
+    font-size: 24px;
+    color: @orange;
+    position: absolute;
+    top: 2.45rem;
+    right: 2.5rem;
+    z-index: 1000;
+    display: none;
+
+    @media @tabletW {
+        display: block;
+    }
+}
+
+// Адаптив для навигациии V-0
+
+.nav__row {
+    height: 58px;
+    display: flex;
+    justify-content: center;
+
+    @media @tabletW {
+        width: 471px;
+        height: 43px;
+        background: @orange;
+        justify-content: space-between;
+    }
+}
+
+.nav__link {
+    font-size: 1.3rem;
+    background: @orange;
+    padding: 1.7em 2.2em;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    transition: background .1s linear;
+
+    &:hover {
+        background: @blue;
+    }
+
+    @media @tabletW {
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+
+
